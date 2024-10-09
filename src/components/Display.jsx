@@ -1,9 +1,9 @@
 import styles from './Display.module.css';
 
-const Display = () => {
+const Display = ({displayValue}) => {
     console.log(styles);
   return (
-    <input className={styles.display} type="text"/>
+    <input className={styles.display} type="text" value={displayValue} readOnly/>
   )
 }
 
